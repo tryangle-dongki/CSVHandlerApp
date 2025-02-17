@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\csv-handler.props" />
+</Project>
