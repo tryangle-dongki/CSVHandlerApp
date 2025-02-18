@@ -75,6 +75,7 @@ public class FileController : Controller
         using (var csv = new CsvReader(reader, new CsvConfiguration(CultureInfo.InvariantCulture)))
         {
             // CSVデータを読み込んでオブジェクトに変換
+            csv.Read();
             csv.ReadHeader();
 
             while (csv.Read())
