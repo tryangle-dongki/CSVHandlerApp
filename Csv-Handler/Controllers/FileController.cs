@@ -91,7 +91,7 @@ public class FileController : Controller
 
                 // 合計と平均を計算
                 record.Sum = new[] { record.Language, record.Mathematics, record.English }.Sum();
-                record.Average = new[] { record.Language, record.Mathematics, record.English }.Average();
+                record.Average = Math.Round(new[] { record.Language, record.Mathematics, record.English }.Average(), 2);
                 record.Rank = 0; // 初期ランクを0に設定
 
                 records.Add(record);
