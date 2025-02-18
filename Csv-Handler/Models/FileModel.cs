@@ -2,6 +2,7 @@
 
 namespace csv_handler.Models;
 
+// CSVファイルのモデルクラス
 public class FileModel
 {
     [Name("名前")]
